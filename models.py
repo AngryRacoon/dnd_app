@@ -98,6 +98,7 @@ class CharacterSpell(Base):
     __tablename__ = 'character_spell'
     character_id = Column(Integer, ForeignKey('characters.character_id'), primary_key=True)
     spell_id = Column(Integer, ForeignKey('spells.spell_id'), primary_key=True)
+    spellcasting_id = Column(Integer, ForeignKey('spellcasting.spellcasting_id'), primary_key=True)
 
 
 # Define the CharacterEquipment model
